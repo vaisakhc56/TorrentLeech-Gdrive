@@ -5,7 +5,7 @@
 # the logging things
 import logging
 import sys
-sys.setrecursionlimit(10**4)
+sys.setrecursionlimit(10**6)
 logging.basicConfig(
     level=logging.DEBUG,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
