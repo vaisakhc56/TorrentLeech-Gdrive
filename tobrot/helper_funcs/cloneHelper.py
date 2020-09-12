@@ -130,7 +130,7 @@ class CloneHelper:
             button.append(
                 [
                     pyrogram.InlineKeyboardButton(
-                        text="🔗Index link",
+                        text="☁️G-Drive Link",
                         url=f"{gau_link}"
                     )
             ]
@@ -142,7 +142,7 @@ class CloneHelper:
                     indexurl = f"{INDEX_LINK}/{self.name}/"
                 tam_link = requests.utils.requote_uri(indexurl)
                 LOGGER.info(tam_link)
-                button.append([pyrogram.InlineKeyboardButton(text="ℹ️ IndexUrl ℹ️", url=f"{tam_link}")])
+                button.append([pyrogram.InlineKeyboardButton(text="🔗Index Link", url=f"{tam_link}")])
             button_markup = pyrogram.InlineKeyboardMarkup(button)
             msg = await self.lsg.edit_text(
                 f"🤖: {_up} cloned successfully in your Cloud <a href='tg://user?id={self.u_id}'>🤒</a>\
